@@ -6,20 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Banana Speak</title>
     <style>
-        text-area {
+        textarea {
             padding: 1rem;
             margin: 1rem;
             height: 10vh;
             width: 80%;
-            display: block
+            display: block;
 
 
-        };
-        output {
+        }
+
+        #output {
             border:1px solid black;
             padding: 1rem;
             margin: 1rem;
-            height: 10vh;;
+            height: 10vh;
             width:80%;
 
         }
@@ -28,10 +29,9 @@
 <body>
     <h1>talk banana</h1>
     <textarea id="txt-input" placeholder="give your input here" ></textarea>
-    <br>
     <button id=btn-translate>Translate</button>
-    <div style="font-size: larger">Output will be shown here 👇</div>
+    <div style="font-size: larger;">Output will be shown here 👇</div>
     <div id='output'></div>
-    <script src='app.js'></script>
+    <script src='app.js' type="text/javascript"></script>
 </body>
 </html>
