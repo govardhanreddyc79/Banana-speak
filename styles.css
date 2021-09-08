@@ -1,0 +1,71 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap'); */
+
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
+
+
+:root {
+    --primary-color:#047857;
+    --dark-gray: #6B7280;
+    --secondary-color: #FEF3C7;
+    --width-break: 600px;
+}
+body {
+    font-family: 'Architects Daughter', cursive;
+    margin: 0px;
+}
+.navigation {
+    background-color: var(--primary-color);
+    color:var(--secondary-color);
+    padding: 2rem;
+    font-size: xx-large;
+    text-align: center;
+}
+.container {
+    padding: 1rem;
+}
+
+.centered-container {
+    max-width:600px;
+    margin: auto;
+}
+#btn-translate {
+    background-color: var(--primary-color);
+    border-radius: 0.5rem;
+    color:white;
+    margin-top: 1rem;
+    text-align: center;
+    display: block;
+    padding:1rem;
+    font-size: large;
+ 
+    
+}
+
+textarea {
+    box-sizing: border-box;
+    display: block;
+    width: 80%;
+    min-height: 20vh;
+    margin-top: 2rem;
+    font-size: large;
+    font-family: inherit;
+}
+
+#output {
+    border:1px solid black;
+    padding: 1rem;
+    margin-top: 2rem;
+    height: 20vh;
+    width:80%;
+    box-sizing: border-box;
+}
+
+.footer {
+    background-color: var(--primary-color);
+    text-align:center;
+    color:var(--secondary-color);
+    padding: 2rem;
+    width: 100%;
+    margin-top: 2rem;
+
+}
