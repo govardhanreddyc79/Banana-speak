@@ -1,63 +1,64 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap'); */
 
-@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Vollkorn:ital@1&display=swap');
 
 
 :root {
     --primary-color:#047857;
-    --dark-gray: #6B7280;
     --secondary-color: #FEF3C7;
     --width-break: 600px;
 }
 body {
-    font-family: 'Architects Daughter', cursive;
-    margin: 0px;
+    font-family: 'Vollkorn', serif;
+    margin: auto;
 }
 .navigation {
     background-color: var(--primary-color);
     color:var(--secondary-color);
     padding: 2rem;
-    font-size: xx-large;
+    font-size: 3rem;
     text-align: center;
-}
-.container {
-    padding: 1rem;
+    margin-bottom: 2rem;
 }
 
-.centered-container {
-    max-width:600px;
-    margin: auto;
-}
+.wrap {
+    margin:1rem auto;
+    width: var(--width-break);
+  }
+
 #btn-translate {
     background-color: var(--primary-color);
-    border-radius: 0.5rem;
-    color:white;
-    margin-top: 1rem;
-    text-align: center;
-    display: block;
-    padding:1rem;
+    border: None;
+    color: var(--secondary-color);
+    /* margin: auto; */
+    padding:0.5rem 2rem;
     font-size: large;
- 
-    
+    display: block;
+    font-family: 'Vollkorn', serif;
 }
 
 textarea {
     box-sizing: border-box;
     display: block;
-    width: 80%;
+    width: 100%;
     min-height: 20vh;
-    margin-top: 2rem;
+    margin-top:2rem;
     font-size: large;
     font-family: inherit;
+    margin: auto;
+    max-width: var(--width-break);
 }
+
 
 #output {
     border:1px solid black;
     padding: 1rem;
-    margin-top: 2rem;
-    height: 20vh;
-    width:80%;
+    /* margin-top: 2rem; */
+    height: 15vh;
+    width:100%;
     box-sizing: border-box;
+    margin: auto;
+    overflow: scroll;
+    max-width: var(--width-break);  
 }
 
 .footer {
@@ -66,6 +67,11 @@ textarea {
     color:var(--secondary-color);
     padding: 2rem;
     width: 100%;
-    margin-top: 2rem;
+    position: fixed;
+    bottom: 0;
+}
 
+.footer .footer-about {
+    margin:0rem auto;
+    width: var(--width-break);
 }
