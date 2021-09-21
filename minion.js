@@ -15,14 +15,17 @@ function errorHandler(error){
 
 function clickEventHandler(){
     var inputText = userInput.value;
-
-    fetch(generateURL(inputText))
+    if(inputText != ''){
+        fetch(generateURL(inputText))
         .then(response => response.json())
         .then(json => {
             var translatedText = json.contents.translated;  
             output.innerText = translatedText;
         })
         .catch(errorHandler)
+    }else{
+        alert("Please provide input string")
     }
+}
 
 btnTranslate.addEventListener("click",clickEventHandler)
