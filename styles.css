@@ -29,6 +29,7 @@ body {
 #btn-translate {
     background-color: var(--primary-color);
     border: None;
+    cursor: pointer;
     color: var(--secondary-color);
     padding:0.5rem 2rem;
     font-size: large;
